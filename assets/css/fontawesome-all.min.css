@@ -4461,3 +4461,41 @@ readers do not read off random characters that represent icons */
 .fas {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
+
+@font-face {
+  font-family: 'FA-Bluesky';
+  src: url('fa-brands-400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+/* Step 1: register only the brands font */
+@font-face {
+  font-family: "FA-Bluesky"; /* pick a unique name */
+  src: url("../webfonts/fa-brands-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Step 2: minimal reset so the pseudo-element behaves like an FA icon */
+.fa-icon { 
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  speak: never;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Step 3: the Bluesky glyph */
+.fa-bluesky::before {
+  font-family: "FA-Bluesky"; 
+  font-weight: 400;
+  content: "\e6a3"; 
+}
+

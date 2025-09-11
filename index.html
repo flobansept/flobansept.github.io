@@ -12,6 +12,14 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	
+	<!-- Cronitor RUM  pour tracker l'activité du site -->
+	<script async src="https://rum.cronitor.io/script.js"></script>
+	<script>
+    	window.cronitor = window.cronitor || function() { (window.cronitor.q = window.cronitor.q || []).push(arguments); };
+    	cronitor('config', { clientKey: '3d400d9894a8a2c636a49e0c66c1b606' });
+	</script>
+
 </head>
 
 <body class="is-preload">
@@ -62,8 +70,13 @@
 
 			<!-- Social Icons -->
 			<ul class="icons">
-				<li><a href="https://twitter.com/FlorenceBansept" target="_blank" class="icon brands fa-twitter"><span
-							class="label">Twitter</span></a></li>
+				  <li><a href="https://bsky.app/profile/florencebansept.bsky.social" target="_blank" class="icon brands">
+    				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" 
+         			width="1.15em" height="1em" fill="currentColor" style="vertical-align:-0.125em;">
+      				<path d="M421.8 65.4c-46.5 33.7-88.2 86.4-121.8 137.8-33.6-51.4-75.3-104.1-121.8-137.8C97.4 14.2 0 51.6 0 173.7c0 39.5 22.6 95.3 64.1 148.7-14.9 16.9-29.4 34.9-41.5 52.9C-3.8 417.1 5.1 492 66.7 523.3c57.1 28.6 133.8 5.8 192.8-34.9 20.9-14.6 41.2-32.4 57.3-50.8 16.1 18.4 36.4 36.2 57.3 50.8 59 40.7 135.7 63.5 192.8 34.9 61.6-31.3 70.5-106.2 43.9-148-12.1-18-26.6-36-41.5-52.9 41.5-53.4 64.1-109.2 64.1-148.7 0-122.1-97.4-159.5-177.6-108.3z"/>
+    				</svg>
+    				<span class="label">Bluesky</span>
+  					</a></li>
 				<li><a href="mailto:florence.bansept@imm.cnrs.fr" target="_blank" class="icon solid fa-envelope"><span
 							class="label">Email</span></a></li>
 				<li><a href="https://www.linkedin.com/in/florence-bansept-phd-323ba7121/" target="_blank"
